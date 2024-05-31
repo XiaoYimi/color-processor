@@ -1,0 +1,14 @@
+# 特别提醒: 标签状态(带颜色),由 VsCode 插件(TodoLight) 自动生成,可自行安装并配置状态色;
+
+## Badge 标识
+BUG Bug问题描述
+WAIT 加急处理事项
+OVER 已开发完毕
+FIXME 修复Bug
+REMARK 备注正在进行时
+
+# version v0.0.1
+
+OVER 实现颜色转换功能
+OVER 类型声明智能提示
+OVER 编写README开发文档

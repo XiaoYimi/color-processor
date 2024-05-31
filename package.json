@@ -1,0 +1,41 @@
+{
+  "name": "color-processor",
+  "version": "0.0.1",
+  "description": "About a color processor.",
+  "keywords": [
+    "color",
+    "processor",
+    "color-processor"
+  ],
+  "type": "module",
+  "main": "dist/color-processor.cjs.js",
+  "module": "dist/color-processor.esm.js",
+  "types": "dist/color-processor.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/color-processor.esm.js",
+      "require": "./dist/color-processor.cjs.js",
+      "types": "./types/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  },
+  "private": false,
+  "license": "MIT",
+  "author": {
+    "name": "chenfengbukeyimi",
+    "email": "2590856083@qq.com",
+    "wechat": "chenfengbukeyimi",
+    "url": "https://github.com/XiaoYimi/"
+  }
+}
