@@ -33,4 +33,13 @@ FIXME 软件包类型声明报错
 # version v0.0.5
 FIXME 软件包类型声明报错
 智能提示软件包类型声明已解决;
-用户使用过程,出现运行错误提示: The plugin "vite:dep-scan" was triggered by this import
+
+用户使用过程,出现运行错误提示: The plugin "vite:dep-scan" was triggered by this import;
+该错误提示描述, "vite:dep-scan" vite lib 库模式依赖的嗅探器无法识别导入依赖;因此,模块依赖导入存在错误;
+
+# version v0.0.6
+FIXME 软件包模块依赖导入识别
+修改 package.json 文件配置 (追加 exports 配置,指明编译后的文件路径)
+
+
+
