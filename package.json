@@ -1,6 +1,6 @@
 {
   "name": "color-processor",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "About a color processor.",
   "keywords": [
     "color",
@@ -11,13 +11,6 @@
   "main": "dist/color-processor.cjs.js",
   "module": "dist/color-processor.esm.js",
   "types": "types/main.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/color-processor.esm.js",
-      "require": "./dist/color-processor.cjs.js",
-      "types": "./types/main.d.ts"
-    }
-  },
   "files": [
     "dist"
   ],
