@@ -10,12 +10,12 @@
   "type": "module",
   "main": "dist/color-processor.cjs.js",
   "module": "dist/color-processor.esm.js",
-  "types": "dist/color-processor.d.ts",
+  "types": "types/main.d.ts",
   "exports": {
     ".": {
       "import": "./dist/color-processor.esm.js",
       "require": "./dist/color-processor.cjs.js",
-      "types": "./types/index.d.ts"
+      "types": "./types/main.d.ts"
     }
   },
   "files": [

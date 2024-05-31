@@ -12,3 +12,11 @@ REMARK 备注正在进行时
 OVER 实现颜色转换功能
 OVER 类型声明智能提示
 OVER 编写README开发文档
+
+WAIT 软件包类型声明报错
+Cannot find module 'color-processor' or its corresponding type declarations.
+
+# version v0.0.2
+
+FIXME 软件包类型声明报错
+修改 package.json 文件配置 (types、exports 正确指向 types 文件配置)
