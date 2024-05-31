@@ -20,3 +20,17 @@ Cannot find module 'color-processor' or its corresponding type declarations.
 
 FIXME 软件包类型声明报错
 修改 package.json 文件配置 (types、exports 正确指向 types 文件配置)
+
+
+# version v0.0.3
+FIXME 软件包类型声明报错
+修改 package.json 文件配置 (移除 exports 配置)
+
+# version v0.0.4
+FIXME 软件包类型声明报错
+修改 package.json 文件配置 (修改 files 配置, 追加 'types' 值)
+
+# version v0.0.5
+FIXME 软件包类型声明报错
+智能提示软件包类型声明已解决;
+用户使用过程,出现运行错误提示: The plugin "vite:dep-scan" was triggered by this import

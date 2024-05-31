@@ -9,8 +9,16 @@
   ],
   "type": "module",
   "main": "dist/color-processor.cjs.js",
-  "module": "dist/color-processor.esm.js",
+  "module": "dist/color-processor.es.js",
   "types": "types/main.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/color-processor.cjs.js",
+      "import": "./dist/color-processor.es.js",
+      "default": "./dist/color-processor.es.js",
+      "types": "./types/main.d.ts"
+    }
+  },
   "files": [
     "dist",
     "types"
