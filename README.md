@@ -1,6 +1,6 @@
 <p align="center">
-    <a href="https://www.npmjs.com/package/xiaoyimi-color"><b>Website</b></a> •
-    <a href="https://www.npmjs.com/package/xiaoyimi-color?activeTab=code"><b>Documentation</b></a>
+    <a href="https://github.com/XiaoYimi/color-processor/"><b>Website</b></a> •
+    <a href="https://www.npmjs.com/package/color-processor"><b>Documentation</b></a>
 </p>
 
 <div align="center">
@@ -11,9 +11,17 @@
 
 ## Table of COntents
 
+- [Statement](#statement)
 - [Features](#features)
 - [Installing](#installing)
 - [API](#api)
+
+## Statement
+
+- 版本`v0.0.1`为基础版本,软件包的类型声明引用存在问题;
+- 版本`v0.0.5`及之前版本,处于开发探索、修复阶段,切勿直接使用;
+- 版本`v0.0.6`,处于稳定阶段,但`README.md`文档未更新;
+- 版本`v0.0.7`及之后版本,处于稳定阶段,`README.md`文档已更新;可放心使用;
 
 ## Features
 
@@ -24,51 +32,55 @@
 Using npm:
 
 ```bash
-$ npm install xiaoyimi-color
+$ npm install color-processor
 ```
 
 Using bower:
 
 ```bash
-$ bower install xiaoyimi-color
+$ bower install color-processor
 ```
 
 Using yarn:
 
 ```bash
-$ yarn add xiaoyimi-color
+$ yarn add color-processor
 ```
 
 Using pnpm:
 
 ```bash
-$ pnpm add xiaoyimi-color
+$ pnpm add color-processor
 ```
 
 On demand import, you can handle it this way:
 
 ```ts
-import { TO_HEX } from 'xiaoyimi-color';
+import { TO_HEX } from 'color-processor';
 console.log(TO_HEX({ r: 12, g: 34, b: 56 }));
 ```
 
 Global import, you can handle it this way:
 
 ```ts
-import * as ColorProcessor from 'xiaoyimi-color';
+import * as ColorProcessor from 'color-processor';
 console.log(ColorProcessor.TO_HEX({ r: 12, g: 34, b: 56 }));
 ```
 
 HTML Link Using:
 
 ```ts
-
-<script type="module" src="/dist/xiaoyimi-color.umd.js"></script>
+/** 本地测试: 需开启本地服务进行测试; 否则出现跨域报错提示; */
+ <script
+    type="module"
+    src="/node_modules/color-processor/dist/color-processor.umd.js"
+></script>
 
 <script type="module">
     /** 全局变量 ColorProcessor  */
     console.log(ColorProcessor);
 </script>
+
 ```
 
 ## API
@@ -90,7 +102,7 @@ HTML Link Using:
 #### Example
 
 ```ts
-import { RGB_TO_HSL } from 'xiaoyimi-color';
+import { RGB_TO_HSL } from 'color-processor';
 
 console.log(RGB_TO_HSL({ r: 12, g: 34, b: 56 }));
 ```
@@ -112,7 +124,7 @@ console.log(RGB_TO_HSL({ r: 12, g: 34, b: 56 }));
 #### Example
 
 ```ts
-import { HSL_TO_RGB } from 'xiaoyimi-color';
+import { HSL_TO_RGB } from 'color-processor';
 
 console.log(HSL_TO_RGB({ h: 0.5, s: 0.3, l: 0.25 }));
 ```
@@ -134,7 +146,7 @@ Parameters
 #### Example
 
 ```ts
-import { RGB_TO_HEX } from 'xiaoyimi-color';
+import { RGB_TO_HEX } from 'color-processor';
 
 console.log(RGB_TO_HEX({ r: 12, g: 34, b: 56 }));
 ```
@@ -156,7 +168,7 @@ Parameters
 #### Example
 
 ```ts
-import { HEX_TO_RGB } from 'xiaoyimi-color';
+import { HEX_TO_RGB } from 'color-processor';
 
 console.log(HEX_TO_RGB('#2e467f'));
 ```
@@ -178,7 +190,7 @@ Parameters
 #### Example
 
 ```ts
-import { HEX_TO_HSL } from 'xiaoyimi-color';
+import { HEX_TO_HSL } from 'color-processor';
 
 console.log(HEX_TO_HSL('#2e467f'));
 ```
@@ -200,7 +212,7 @@ Parameters
 #### Example
 
 ```ts
-import { HSL_TO_HEX } from 'xiaoyimi-color';
+import { HSL_TO_HEX } from 'color-processor';
 
 console.log(HSL_TO_HEX({ h: 0.5, s: 0.3, l: 0.25 }));
 ```
@@ -222,7 +234,7 @@ Parameters
 #### Example
 
 ```ts
-import { TO_HEX } from 'xiaoyimi-color';
+import { TO_HEX } from 'color-processor';
 
 console.log(TO_HEX('#2e467f'));
 console.log(TO_HEX({ r: 12, g: 34, b: 56 }));
@@ -246,7 +258,7 @@ Parameters
 #### Example
 
 ```ts
-import { TO_HSL } from 'xiaoyimi-color';
+import { TO_HSL } from 'color-processor';
 
 console.log(TO_HSL('#2e467f'));
 console.log(TO_HSL({ r: 12, g: 34, b: 56 }));
@@ -270,7 +282,7 @@ Parameters
 #### Example
 
 ```ts
-import { TO_RGB } from 'xiaoyimi-color';
+import { TO_RGB } from 'color-processor';
 
 console.log(TO_RGB('#2e467f'));
 console.log(TO_RGB({ r: 12, g: 34, b: 56 }));
@@ -296,7 +308,7 @@ Parameters
 #### Example
 
 ```ts
-import { BLEND_COLOR } from 'xiaoyimi-color';
+import { BLEND_COLOR } from 'color-processor';
 
 console.log(BLEND_COLOR('#2e467f', '#ff0000', 0.5));
 console.log(BLEND_COLOR({ r: 12, g: 34, b: 56 }, { r: 12, g: 34, b: 56 }, 0.5));
@@ -319,7 +331,7 @@ Parameters
 #### Example
 
 ```ts
-import { BLEND_LEVEL_COLOR } from 'xiaoyimi-color';
+import { BLEND_LEVEL_COLOR } from 'color-processor';
 
 console.log(BLEND_LEVEL_COLOR('#2e467f'));
 ```
