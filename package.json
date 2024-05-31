@@ -1,6 +1,6 @@
 {
   "name": "color-processor",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "About a color processor.",
   "keywords": [
     "color",
@@ -12,7 +12,8 @@
   "module": "dist/color-processor.esm.js",
   "types": "types/main.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "types"
   ],
   "scripts": {
     "dev": "vite",
